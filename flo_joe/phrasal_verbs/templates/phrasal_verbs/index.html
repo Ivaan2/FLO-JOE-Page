@@ -1,0 +1,24 @@
+{% extends 'phrasal_verbs/base.html' %}
+
+{% block content %}
+<div class="container text-center">
+    <h1>Phrasal Verbs</h1>
+</div>
+
+{% if phrasal_verbs.length != 0 %}
+<div class="container text-center">
+    
+    <div class="row">
+        {% for p in phrasal_verbs %}
+        <div class="col-4">
+            <div id="carta">
+                <p><a href="{% url 'pv:phrasal_verbs_detail' p.id %}">{{p.verb | capfirst}}</a></p>
+                <!-- enlace a la vista detallada -->
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endblock %}

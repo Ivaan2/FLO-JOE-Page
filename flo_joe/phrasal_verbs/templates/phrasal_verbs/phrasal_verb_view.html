@@ -1,0 +1,30 @@
+{% extends 'phrasal_verbs/base.html' %}
+
+{% block content %}
+<div class="container text-center">
+    <h1 class="display-6">Phrasal Verbs</h1>
+</div>
+<hr>
+<div class="phrasal-verb">
+    <h2>{{p.verb | capfirst}}</h2>
+</div>
+<div class="container text-center">
+     <h2>{{p.definition | capfirst}}</h2>
+    <br>
+    <div>
+        <p>{{p.example | capfirst}}</p>
+    </div>
+    <br>
+    <div>
+        <p>{{p.traduction | capfirst}}</p>
+    </div>
+    <br><br>
+    <button type="button" onclick="enlaceWR();" class="btn btn-outline-primary">WordReference</button>
+</div>
+
+<script>
+    function enlaceWR() {
+        window.open("https://www.wordreference.com/es/translation.asp?tranword={{p.verb}}", "_blank");
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,93 @@
+div ul{
+    padding: 5px 0px;
+    background-color: #5A7D7C;
+    
+}
+
+div ul li{
+    display: inline;
+    margin: 30px;
+    padding: 0;
+}
+
+div ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+    background-color: #1B2F33;
+}
+
+h1{
+    color: #E5B181;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+#carta{
+    margin: 30px 15px;
+    width: 200px;
+    height: 200px;
+    background-color: #A09ABC;
+    border-radius: 17px;
+}
+
+#carta:hover{
+    background-color: #000;
+}
+
+#carta p:hover{
+    font-size: 24px;
+    font-style: italic;
+}
+
+#carta p{
+    padding-top: 80px;
+    font-family: 'Arial';
+    font-style: bold;
+    font-size: 22px;
+    color: #CED097;
+}
+
+#carta p a{
+    text-decoration: none;
+    color: #CED097;
+}
+
+.container h2{
+    color: #fff;
+}
+
+.container p{
+    color: #beadadf0;
+}
+hr{
+    border: 1px solid #fff;
+}
+
+.phrasal-verb{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+    background-color: #5A7D7C;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 15px 25px;
+}
+
+.phrasal-verb h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 150px;
+}
