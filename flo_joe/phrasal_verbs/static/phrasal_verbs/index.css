@@ -91,3 +91,18 @@ hr{
 button{
     margin-top: 150px;
 }
+
+#popup{
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-left: calc(30%);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+#popup .tag{
+    margin-top: 10px;
+}
