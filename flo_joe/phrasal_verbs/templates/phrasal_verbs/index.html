@@ -9,35 +9,59 @@
 <div class="container">
     <div id="contenedorCartas" class="container text-center">
         <div class="row">
-            {% for p in phrasal_verbs %}
+            <!--
+            {% for pv in phrasal_verbs %}
             <div class="col-4">
                 <div id="carta" onclick="mostrar_mensaje();">
-                    <p><a href="{% url 'pv:phrasal_verbs_detail' p.id %}">{{p.verb | capfirst}}</a></p>
-                    <!-- enlace a la vista detallada -->
+                    <p><a href="{% url 'pv:phrasal_verbs_detail' pv.id %}">{{pv.verb | capfirst}}</a></p>
+                    
 
                 </div>
+                    <div id="popup" class="popup" name="popup" onclick="ocultarPopup();">
+                        <h3 class="tag" id="verb-tag">
+                            {{pv.verb}}
+                        </h3>
+                        <br>
+                        <p class="tag" id="definition-tag">
+                            {{p.definition}}
+                        </p>
+                        <br>
+                        <p class="tag" id="traduction-tag">
+                            {{p.traduction}}
+                        </p>
+                        <br>
+                        <p class="tag" id="example-tag">
+                            {{p.example}}
+                        </p>
+                        
+                    </div>
+            </div>
+            
+            {% endfor %}
+            -->
+            {% for p in phrasal_verbs %}
+            <div class="col-4">
+                <div class="flip-container">
+                    <div class="card">
+                      <div class="front">
+                        <br>
+                        <p><strong>{{p.verb | capfirst}}</strong></p>
+                      </div>
+                      <div class="back">
+                        <p><strong>{{p.traduction | capfirst}}</strong></p>
+                        <br>
+                        <p>{{p.example | capfirst}}</p>
+                        <button type="button" onclick="enlaceWR();" class="btn btn-outline-success">WordReference</button>
+                      </div>
+                    </div>
+                  </div> 
             </div>
             {% endfor %}
+            
         </div>
     </div>  
-    <div id="popup" class="popup" onclick="ocultarPopup();">
-        <h3>
-            SOY UN popup
-        </h3>
-        <br>
-        <p class="tag">
-            Definition
-        </p>
-        <br>
-        <p>
-            traduction
-        </p>
-        <br>
-        <p>
-            example
-        </p>
-        
-    </div>
+    
+    
 </div>
 
 <script>
@@ -53,6 +77,10 @@
     function ocultarPopup(){
         $('#contenedorCartas').show();
         $('#popup').hide();
+    }
+
+    function enlaceWR() {
+        window.open("https://www.wordreference.com/es/translation.asp?tranword={{p.verb}}", "_blank");
     }
 </script>
 {% endif %}
