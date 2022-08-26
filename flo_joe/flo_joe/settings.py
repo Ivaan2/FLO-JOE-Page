@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'phrasal_verbs',
     'jquery',
+    'home'
 ]
 
 MIDDLEWARE = [

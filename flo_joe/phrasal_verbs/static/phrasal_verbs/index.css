@@ -117,6 +117,7 @@ button{
     border: 1px solid transparent;
     perspective: 1000px; 
     align-items: center;
+    border-radius: 10px;
   }
   .card {
     position: relative;
@@ -125,6 +126,7 @@ button{
     text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
+    border-radius: 10px;
   }
   .flip-container:hover .card {
     transform: rotateY(180deg);
@@ -138,6 +140,7 @@ button{
     backface-visibility: hidden;
     justify-content: center;
     background-color: #F7D08A;
+    border-radius: 10px;
   }
   .back {
     padding-top: 10%;
@@ -146,6 +149,7 @@ button{
     height: 100%;
     backface-visibility: hidden;
     justify-content: center;
+    border-radius: 10px;
   }
 
   .front p{
