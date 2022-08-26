@@ -19,5 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('phrasal_verbs/', include('phrasal_verbs.urls')),
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('word_formation', include('word_formation.urls')),
+    path('collocation', include('collocation.urls'))
 ]

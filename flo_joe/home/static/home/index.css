@@ -1,0 +1,175 @@
+div ul{
+    padding: 5px 0px;
+    background-color: #5A7D7C;
+    
+}
+
+div ul li{
+    display: inline;
+    margin: 30px;
+    padding: 0;
+}
+
+div ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+    background-color: #1B2F33;
+}
+
+h1{
+    color: #F7D08A;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+#carta{
+    margin: 30px 15px;
+    width: 200px;
+    height: 200px;
+    background-color: #A09ABC;
+    border-radius: 17px;
+}
+
+#carta:hover{
+    background-color: #000;
+}
+
+#carta p:hover{
+    font-size: 24px;
+    font-style: italic;
+}
+
+#carta p{
+    padding-top: 80px;
+    font-family: 'Arial';
+    font-style: bold;
+    font-size: 22px;
+    color: #CED097;
+}
+
+#carta p a{
+    text-decoration: none;
+    color: #CED097;
+}
+
+.container h2{
+    color: #fff;
+}
+
+.container p{
+    color: #beadadf0;
+}
+hr{
+    border: 1px solid #fff;
+}
+
+.phrasal-verb{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+    background-color: #5A7D7C;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 15px 25px;
+}
+
+.phrasal-verb h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 150px;
+}
+
+#popup{
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    background-color: #F7D08A;
+    margin-top: 25px;
+    margin-left: calc(35% - 35px);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+#popup .tag{
+    margin-top: 10px;
+    text-align: center;
+    color: #78290F;
+}
+
+.flip-container {
+    margin: 35px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid transparent;
+    perspective: 1000px; 
+    align-items: center;
+    border-radius: 10px;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+  }
+  .flip-container:hover .card {
+    transform: rotateY(180deg);
+  }
+  .front{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    justify-content: center;
+    background-color: #F7D08A;
+    border-radius: 10px;
+  }
+  .back {
+    padding-top: 10%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .front p{
+    color: #78290F;
+    font-size: 34px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .back {
+    background-color: #D7F2BA;
+    transform: rotateY(180deg);
+  }
+
+  .back p{
+    color: rgb(11, 43, 16);
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .back button{
+    margin-top: 40px;
+  }
